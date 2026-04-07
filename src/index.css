@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Barlow+Condensed:wght@600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Barlow", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Barlow Condensed", ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand-bg: #0a0a0f;
+  --color-brand-surface: #111118;
+  --color-brand-surface2: #16161f;
+  --color-brand-card: #1a1a26;
+  --color-brand-card2: #1e1e2c;
+  --color-brand-border: rgba(255, 255, 255, 0.07);
+  --color-brand-purple: #7c3aed;
+  --color-brand-purple-l: #a855f7;
+  --color-brand-blue: #06b6d4;
+  --color-brand-blue-l: #22d3ee;
+  --color-brand-gold: #f59e0b;
+  --color-brand-gold-l: #fbbf24;
+  --color-brand-green: #10b981;
+  --color-brand-red: #ef4444;
+  --color-brand-text: #e8e8f0;
+  --color-brand-muted: #8888a8;
+  --color-brand-faint: #44445a;
+}
+
+body {
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-faint);
+  border-radius: 3px;
+}
