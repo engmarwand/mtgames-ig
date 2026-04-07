@@ -38,7 +38,7 @@ export default function App() {
         <div className="relative z-10 max-w-3xl mx-auto">
           <div className="w-32 h-32 rounded-3xl border-2 border-brand-gold shadow-[0_0_40px_rgba(245,158,11,0.25),0_0_80px_rgba(124,58,237,0.3)] overflow-hidden mx-auto mb-8 bg-brand-card">
             <img
-              src="logo.png"
+              src="/logo.png"
               alt="MTGames Logo"
               className="w-full h-full object-cover"
             />
@@ -94,8 +94,8 @@ export default function App() {
               key={item.id}
               onClick={() => scrollTo(item.id)}
               className={`px-3.5 py-1.5 rounded-lg text-sm font-semibold transition-colors ${activeSection === item.id
-                  ? 'text-brand-gold bg-brand-gold/10'
-                  : 'text-brand-muted hover:text-brand-text hover:bg-brand-card'
+                ? 'text-brand-gold bg-brand-gold/10'
+                : 'text-brand-muted hover:text-brand-text hover:bg-brand-card'
                 }`}
             >
               {item.label}
