@@ -33,7 +33,7 @@ export default function App() {
       {/* COVER SECTION */}
       <section id="cover" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden text-center px-6 py-10">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_0%,rgba(124,58,237,0.35)_0%,transparent_60%),radial-gradient(ellipse_60%_40%_at_80%_80%,rgba(6,182,212,0.2)_0%,transparent_60%),radial-gradient(ellipse_40%_30%_at_20%_90%,rgba(245,158,11,0.15)_0%,transparent_60%),var(--color-brand-bg)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-[size:60px_60px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-size-[60px_60px]" />
 
         <div className="relative z-10 max-w-3xl mx-auto">
           <div className="w-32 h-32 rounded-3xl border-2 border-brand-gold shadow-[0_0_40px_rgba(245,158,11,0.25),0_0_80px_rgba(124,58,237,0.3)] overflow-hidden mx-auto mb-8 bg-brand-card">
