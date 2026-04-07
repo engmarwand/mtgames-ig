@@ -34,29 +34,29 @@ export default function App() {
       <section id="cover" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden text-center px-6 py-10">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_0%,rgba(124,58,237,0.35)_0%,transparent_60%),radial-gradient(ellipse_60%_40%_at_80%_80%,rgba(6,182,212,0.2)_0%,transparent_60%),radial-gradient(ellipse_40%_30%_at_20%_90%,rgba(245,158,11,0.15)_0%,transparent_60%),var(--color-brand-bg)]" />
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-[size:60px_60px]" />
-        
+
         <div className="relative z-10 max-w-3xl mx-auto">
           <div className="w-32 h-32 rounded-3xl border-2 border-brand-gold shadow-[0_0_40px_rgba(245,158,11,0.25),0_0_80px_rgba(124,58,237,0.3)] overflow-hidden mx-auto mb-8 bg-brand-card">
-            <img 
-              src="/logo.png" 
-              alt="MTGames Logo" 
+            <img
+              src="logo.png"
+              alt="MTGames Logo"
               className="w-full h-full object-cover"
             />
           </div>
-          
+
           <div className="font-display text-sm font-bold tracking-[4px] uppercase text-brand-gold mb-4">
             Clipur × MTGames · April 2026
           </div>
-          
+
           <h1 className="font-display text-[clamp(42px,8vw,80px)] font-black uppercase leading-[0.95] tracking-tight mb-5">
             <span className="text-brand-purple-l">Campaign</span><br />
             <span className="text-brand-blue">Brief</span>
           </h1>
-          
+
           <p className="text-lg text-brand-muted mb-10 max-w-xl mx-auto">
             Instagram Reels · Skill-Based Real Money Gaming
           </p>
-          
+
           <div className="flex flex-wrap justify-center gap-3 mb-12">
             <span className="px-4 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase bg-brand-gold/15 text-brand-gold border border-brand-gold/30">
               🎯 First Deposit = Win
@@ -68,7 +68,7 @@ export default function App() {
               ⚡ 80%+ Retention Target
             </span>
           </div>
-          
+
           <div className="text-brand-muted text-sm flex items-center justify-center gap-2">
             Scroll to read the full brief <ChevronDown className="w-4 h-4 animate-bounce" />
           </div>
@@ -93,11 +93,10 @@ export default function App() {
             <button
               key={item.id}
               onClick={() => scrollTo(item.id)}
-              className={`px-3.5 py-1.5 rounded-lg text-sm font-semibold transition-colors ${
-                activeSection === item.id 
-                  ? 'text-brand-gold bg-brand-gold/10' 
+              className={`px-3.5 py-1.5 rounded-lg text-sm font-semibold transition-colors ${activeSection === item.id
+                  ? 'text-brand-gold bg-brand-gold/10'
                   : 'text-brand-muted hover:text-brand-text hover:bg-brand-card'
-              }`}
+                }`}
             >
               {item.label}
             </button>
@@ -107,12 +106,12 @@ export default function App() {
 
       {/* CONTENT WRAPPER */}
       <main className="max-w-5xl mx-auto px-6 pb-20">
-        
+
         {/* SECTION 1: WHAT IS MTGAMES */}
         <section id="what" className="py-20 border-b border-brand-border">
           <div className="font-display text-xs font-extrabold tracking-[4px] uppercase text-brand-gold mb-2.5">Section 01</div>
           <h2 className="font-display text-[clamp(28px,4vw,48px)] font-black uppercase leading-none tracking-tight mb-5">What Is MTGames?</h2>
-          
+
           <div className="rounded-xl p-5 md:p-6 mb-8 border border-brand-gold/30 bg-brand-gold/10 flex gap-3.5 items-start">
             <Trophy className="w-6 h-6 text-brand-gold shrink-0 mt-0.5" />
             <div>
@@ -120,7 +119,7 @@ export default function App() {
               <div className="text-brand-muted text-[15px]">Players compete head-to-head or in tournaments against real people. The platform takes a flat 17-cent fee per dollar. No house edge. No bots. Skill wins.</div>
             </div>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-brand-card border border-brand-border rounded-2xl p-6">
               <div className="font-display text-xs font-extrabold tracking-[3px] uppercase text-brand-blue mt-2 mb-3">The Game</div>
@@ -138,7 +137,7 @@ export default function App() {
                 ))}
               </ul>
             </div>
-            
+
             <div className="bg-brand-card border border-brand-border rounded-2xl p-6">
               <div className="font-display text-xs font-extrabold tracking-[3px] uppercase text-brand-blue mt-2 mb-3">The Platform</div>
               <ul className="space-y-0">
@@ -156,7 +155,7 @@ export default function App() {
               </ul>
             </div>
           </div>
-          
+
           <div className="rounded-xl p-5 md:p-6 mt-6 border border-brand-blue/30 bg-brand-blue/10 flex gap-3.5 items-start">
             <Lightbulb className="w-6 h-6 text-brand-blue shrink-0 mt-0.5" />
             <div>
@@ -170,7 +169,7 @@ export default function App() {
         <section id="job" className="py-20 border-b border-brand-border">
           <div className="font-display text-xs font-extrabold tracking-[4px] uppercase text-brand-gold mb-2.5">Section 02</div>
           <h2 className="font-display text-[clamp(28px,4vw,48px)] font-black uppercase leading-none tracking-tight mb-5">Your One Job</h2>
-          
+
           <div className="rounded-xl p-5 md:p-6 mb-8 border border-brand-purple/30 bg-brand-purple/10 flex gap-3.5 items-start">
             <Target className="w-6 h-6 text-brand-purple-l shrink-0 mt-0.5" />
             <div>
@@ -178,7 +177,7 @@ export default function App() {
               <div className="text-brand-muted text-[15px]">Views are nice. Installs matter. <strong className="text-brand-gold font-semibold">Deposits are the win.</strong> Before you post anything, ask: "Does this clip make someone want to download AND deposit?"</div>
             </div>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-brand-card border border-brand-border rounded-2xl p-6">
               <div className="font-display text-xs font-extrabold tracking-[3px] uppercase text-brand-blue mt-2 mb-3">Target Audience</div>
@@ -196,7 +195,7 @@ export default function App() {
                 ))}
               </ul>
             </div>
-            
+
             <div className="bg-brand-card border border-brand-border rounded-2xl p-6">
               <div className="font-display text-xs font-extrabold tracking-[3px] uppercase text-brand-blue mt-2 mb-3">What You Have</div>
               <ul className="space-y-0">
@@ -221,7 +220,7 @@ export default function App() {
           <div className="font-display text-xs font-extrabold tracking-[4px] uppercase text-brand-gold mb-2.5">Section 03</div>
           <h2 className="font-display text-[clamp(28px,4vw,48px)] font-black uppercase leading-none tracking-tight mb-5">Approved Content Angles</h2>
           <p className="text-brand-muted mb-6">Every clip MUST fit exactly one of these 5 angles. Do not mix multiple angles into one clip — pick one and commit to it fully.</p>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               { icon: "💰", name: "Money Proof", desc: "Show the money is real. Show wins. Show the payout.", ex: "I just made money playing this tower game." },
@@ -238,7 +237,7 @@ export default function App() {
               </div>
             ))}
           </div>
-          
+
           <div className="rounded-xl p-5 md:p-6 mt-6 border border-brand-gold/30 bg-brand-gold/10 flex gap-3.5 items-start">
             <Zap className="w-6 h-6 text-brand-gold shrink-0 mt-0.5" />
             <div>
@@ -253,7 +252,7 @@ export default function App() {
           <div className="font-display text-xs font-extrabold tracking-[4px] uppercase text-brand-gold mb-2.5">Section 04</div>
           <h2 className="font-display text-[clamp(28px,4vw,48px)] font-black uppercase leading-none tracking-tight mb-5">Clip Structure</h2>
           <p className="text-brand-muted mb-6">Use this exact structure every single time. The goal is <strong className="text-brand-gold font-semibold">80%+ average view duration</strong> on Instagram Reels. That means every second must earn its place.</p>
-          
+
           <div className="flex flex-col mt-6">
             {[
               { time: "0–2s", label: "🎣 Hook", desc: "The most critical 2 seconds of the entire clip. Must be verbal AND visual simultaneously. Gameplay MUST be on screen already. If the first frame is a black screen or someone just talking — you already lost.", note: "If the hook fails, the rest of the clip is irrelevant. No exceptions." },
@@ -274,7 +273,7 @@ export default function App() {
               </div>
             ))}
           </div>
-          
+
           <div className="rounded-xl p-5 md:p-6 mt-6 border border-brand-blue/30 bg-brand-blue/10 flex gap-3.5 items-start">
             <AlertTriangle className="w-6 h-6 text-brand-blue shrink-0 mt-0.5" />
             <div>
@@ -288,7 +287,7 @@ export default function App() {
         <section id="editing" className="py-20 border-b border-brand-border">
           <div className="font-display text-xs font-extrabold tracking-[4px] uppercase text-brand-gold mb-2.5">Section 05</div>
           <h2 className="font-display text-[clamp(28px,4vw,48px)] font-black uppercase leading-none tracking-tight mb-5">Editing Rules</h2>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
             <div className="rounded-xl overflow-hidden">
               <div className="bg-brand-green/15 text-brand-green px-5 py-3 font-display text-[15px] font-extrabold uppercase tracking-wide">
@@ -312,7 +311,7 @@ export default function App() {
                 ))}
               </div>
             </div>
-            
+
             <div className="rounded-xl overflow-hidden">
               <div className="bg-brand-red/15 text-brand-red px-5 py-3 font-display text-[15px] font-extrabold uppercase tracking-wide">
                 ❌ NEVER DO THIS
@@ -336,7 +335,7 @@ export default function App() {
               </div>
             </div>
           </div>
-          
+
           <div className="rounded-xl p-5 md:p-6 mt-6 border border-brand-gold/30 bg-brand-gold/10 flex gap-3.5 items-start">
             <span className="text-2xl shrink-0 mt-0.5">🎨</span>
             <div>
@@ -351,23 +350,23 @@ export default function App() {
           <div className="font-display text-xs font-extrabold tracking-[4px] uppercase text-brand-gold mb-2.5">Section 06</div>
           <h2 className="font-display text-[clamp(28px,4vw,48px)] font-black uppercase leading-none tracking-tight mb-5">Hook Bank</h2>
           <p className="text-brand-muted mb-6">Pick ONE hook per clip. The same gameplay footage can become 4+ different clips just by swapping the hook. This is how you get volume from limited source material.</p>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {[
-              { 
-                title: "💰 Money / Greed", 
+              {
+                title: "💰 Money / Greed",
                 hooks: ["I just made money playing this tower game.", "Everyone's gaming for free while this app actually pays.", "I turned one game session into real money.", "This app lowkey prints money if you're good."]
               },
-              { 
-                title: "🏆 Competition / Ego", 
+              {
+                title: "🏆 Competition / Ego",
                 hooks: ["I bet you can't get higher than this.", "Everyone thinks they're cracked until money is on the line.", "If you're actually skilled, prove it here.", "This got way more competitive than I expected."]
               },
-              { 
-                title: "😳 Curiosity / Pattern Interrupt", 
+              {
+                title: "😳 Curiosity / Pattern Interrupt",
                 hooks: ["Why is nobody talking about this game?", "This should not be this addictive.", "I thought this was fake until I actually tried it.", "This app is lowkey illegal... wait no it's not."]
               },
-              { 
-                title: "🧠 Anti-Casino / Fairness", 
+              {
+                title: "🧠 Anti-Casino / Fairness",
                 hooks: ["This isn't gambling — that's why it's actually interesting.", "No house, no bots, just real players.", "Finally a game where skill actually matters.", "Stop playing games designed to make you lose."]
               }
             ].map((cat, i) => (
@@ -385,7 +384,7 @@ export default function App() {
               </div>
             ))}
           </div>
-          
+
           <div className="rounded-xl p-5 md:p-6 mt-6 border border-brand-purple/30 bg-brand-purple/10 flex gap-3.5 items-start">
             <Lightbulb className="w-6 h-6 text-brand-purple-l shrink-0 mt-0.5" />
             <div>
@@ -400,7 +399,7 @@ export default function App() {
           <div className="font-display text-xs font-extrabold tracking-[4px] uppercase text-brand-gold mb-2.5">Section 07</div>
           <h2 className="font-display text-[clamp(28px,4vw,48px)] font-black uppercase leading-none tracking-tight mb-5">Example Scripts</h2>
           <p className="text-brand-muted mb-6">These are fully mapped scripts. Follow the timing exactly. Use these as templates — change the hook to create a new version.</p>
-          
+
           <div className="space-y-5">
             {[
               {
@@ -475,7 +474,7 @@ export default function App() {
           <div className="font-display text-xs font-extrabold tracking-[4px] uppercase text-brand-gold mb-2.5">Section 08</div>
           <h2 className="font-display text-[clamp(28px,4vw,48px)] font-black uppercase leading-none tracking-tight mb-5">Caption Guide</h2>
           <p className="text-brand-muted mb-8">Every Reel needs a caption. It drives SEO, watch time, and installs. Keep it human — not corporate, not ChatGPT-sounding.</p>
-          
+
           <div className="font-display text-xs font-extrabold tracking-[3px] uppercase text-brand-blue mb-3">Caption Structure</div>
           <ul className="space-y-0 mb-8">
             {[
@@ -491,7 +490,7 @@ export default function App() {
               </li>
             ))}
           </ul>
-          
+
           <div className="bg-brand-card border border-brand-border rounded-xl p-6 mb-8">
             <div className="inline-flex items-center gap-1.5 bg-brand-blue/10 text-brand-blue border border-brand-blue/20 rounded-full px-3 py-1 text-xs font-bold mb-4">
               📱 Example Caption
@@ -503,7 +502,7 @@ export default function App() {
               download and see if you can beat my score.
             </div>
           </div>
-          
+
           <div className="font-display text-xs font-extrabold tracking-[3px] uppercase text-brand-blue mb-3">Pinned Comment Ideas (Use These)</div>
           <ul className="space-y-0 mb-8">
             {[
@@ -518,12 +517,12 @@ export default function App() {
               </li>
             ))}
           </ul>
-          
+
           <div className="font-display text-xs font-extrabold tracking-[3px] uppercase text-brand-blue mb-3">AI Caption Prompt (Copy This Into Grok or Gemini)</div>
           <div className="bg-brand-card border border-brand-border rounded-xl p-1 mt-4">
             <p className="text-[13px] text-brand-muted mb-3 mt-2 px-4 font-mono">COPY THIS EXACT PROMPT → PASTE INTO GROK OR GEMINI → UPLOAD YOUR CLIP</p>
             <div className="bg-brand-card2 rounded-lg p-5 text-[13px] leading-[1.7] text-brand-text font-mono whitespace-pre-wrap">
-{`You are a top TikTok and Instagram Reels growth expert and direct response marketer.
+              {`You are a top TikTok and Instagram Reels growth expert and direct response marketer.
 
 Analyze this video and write a HIGH-CONVERTING caption optimized for:
 1. App installs and first-time deposits
@@ -557,7 +556,7 @@ OUTPUT:
         <section id="unique" className="py-20 border-b border-brand-border">
           <div className="font-display text-xs font-extrabold tracking-[4px] uppercase text-brand-gold mb-2.5">Section 09</div>
           <h2 className="font-display text-[clamp(28px,4vw,48px)] font-black uppercase leading-none tracking-tight mb-5">Unique Output Rule</h2>
-          
+
           <div className="rounded-xl p-5 md:p-6 mb-8 border border-brand-red/30 bg-brand-red/10 flex gap-3.5 items-start">
             <AlertTriangle className="w-6 h-6 text-brand-red shrink-0 mt-0.5" />
             <div>
@@ -565,7 +564,7 @@ OUTPUT:
               <div className="text-brand-muted text-[15px]">All clippers get the same source footage. The Instagram algorithm detects duplicate or near-duplicate content and suppresses it. Your clip MUST feel completely different.</div>
             </div>
           </div>
-          
+
           <div className="bg-brand-card border border-brand-border rounded-xl p-6">
             <div className="font-display text-xs font-extrabold tracking-[3px] uppercase text-brand-blue mb-4">Change At Least 3 of These Every Time</div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
@@ -594,7 +593,7 @@ OUTPUT:
           <div className="font-display text-xs font-extrabold tracking-[4px] uppercase text-brand-gold mb-2.5">Section 10</div>
           <h2 className="font-display text-[clamp(28px,4vw,48px)] font-black uppercase leading-none tracking-tight mb-5">Final Checklist</h2>
           <p className="text-brand-muted mb-6">Run through this before every single post. Click each box to check it off. If anything is unchecked — fix it first.</p>
-          
+
           <div className="flex flex-col gap-3">
             {[
               "Gameplay is visible in the first 1–2 seconds",
@@ -611,11 +610,10 @@ OUTPUT:
               const [checked, setChecked] = useState(false);
               return (
                 <div key={i} className="flex gap-3.5 items-start p-4 bg-brand-card border border-brand-border rounded-xl text-[15px]">
-                  <button 
+                  <button
                     onClick={() => setChecked(!checked)}
-                    className={`w-5 h-5 rounded-md border-2 shrink-0 mt-0.5 flex items-center justify-center transition-colors ${
-                      checked ? 'bg-brand-green border-brand-green text-white' : 'border-brand-faint hover:border-brand-muted'
-                    }`}
+                    className={`w-5 h-5 rounded-md border-2 shrink-0 mt-0.5 flex items-center justify-center transition-colors ${checked ? 'bg-brand-green border-brand-green text-white' : 'border-brand-faint hover:border-brand-muted'
+                      }`}
                   >
                     {checked && <CheckCircle2 className="w-4 h-4" />}
                   </button>
@@ -626,7 +624,7 @@ OUTPUT:
               );
             })}
           </div>
-          
+
           <div className="rounded-xl p-5 md:p-6 mt-8 border border-brand-gold/30 bg-brand-gold/10 flex gap-3.5 items-start">
             <span className="text-2xl shrink-0 mt-0.5">🚀</span>
             <div>
@@ -641,13 +639,13 @@ OUTPUT:
       {/* FOOTER */}
       <footer className="text-center py-16 px-6 border-t border-brand-border text-brand-muted text-sm">
         <div className="mb-4">
-          <img 
-            src="/logo.png" 
-            alt="MTGames" 
+          <img
+            src="/logo.png"
+            alt="MTGames"
             className="h-10 w-10 rounded-lg object-cover mx-auto border border-brand-gold/30"
           />
         </div>
-        <strong className="text-brand-text font-semibold">MTGames × Clipur</strong> · Instagram Reels Campaign Brief · April 2026<br/>
+        <strong className="text-brand-text font-semibold">MTGames × Clipur</strong> · Instagram Reels Campaign Brief · April 2026<br />
         <span className="mt-2 block">Confidential — For Clipper Use Only</span>
       </footer>
     </div>
